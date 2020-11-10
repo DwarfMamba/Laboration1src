@@ -46,11 +46,34 @@ public class Car implements Moveable{
         dir = (dir+1)%4;
     }
 
-    public void gas(double factor){
-
+    public void gas(double amount){
+        if (0 <= amount && amount <= 1) {
+            incrementSpeed(amount);
+        }
+        else {
+            throw new IllegalArgumentException("Only values between 0 and 1 are valid");
+        }
     }
-    public void brake(double factor){
 
+    public void brake(double amount){
+        if (0 <= amount && amount <= 1) {
+            decrementSpeed(amount);
+        }
+        else {
+            throw new IllegalArgumentException("Only values between 0 and 1 are valid");
+        }
+    }
+
+    private void incrementSpeed(double amount){
+        currentSpeed = Math.min(getCurrentSpeed() + this.speedFactor() * amount,enginePower);
+    }
+
+    private void decrementSpeed(double amount){
+        currentSpeed = Math.max(getCurrentSpeed() - this.speedFactor() * amount,0);
+    }
+
+    private double speedFactor(){
+        return 1;
     }
 
 
