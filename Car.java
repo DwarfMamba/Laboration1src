@@ -72,7 +72,7 @@ public class Car implements Moveable{
         currentSpeed = Math.max(getCurrentSpeed() - this.speedFactor() * amount,0);
     }
 
-    private double speedFactor(){
+    double speedFactor(){
         return 1;
     }
 
