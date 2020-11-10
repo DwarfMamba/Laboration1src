@@ -30,7 +30,7 @@ public class CarGame extends JFrame{
             map.getContentPane().removeAll(); //rensar fönstret (borde nog ta bort bara bilen specifikt)
             map.add(newLabel); //lägger till nya bilen
             map.repaint(); //uppdaterar fönstret
-
+            System.out.println(car.getCurrentSpeed());
             wait(17); //väntar 17 millisekunder = 60FPS
         }
     }
