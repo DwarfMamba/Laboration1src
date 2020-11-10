@@ -7,17 +7,17 @@ import java.awt.*;
 public class Car implements Moveable{
     public Point position = new Point(200,200);
 
-    public int dir;
-    public static final int NORTH = 0;
-    public static final int EAST = 1;
-    public static final int SOUTH = 2;
-    public static final int WEST = 3;
+    int dir;
+    static final int NORTH = 0;
+    static final int EAST = 1;
+    static final int SOUTH = 2;
+    static final int WEST = 3;
 
-    public int nrDoors; // Number of doors on the car
-    public double enginePower; // Engine power of the car
-    public double currentSpeed; // The current speed of the car
-    public Color color; // Color of the car
-    public String modelName; // The car model name
+    int nrDoors; // Number of doors on the car
+    double enginePower; // Engine power of the car
+    double currentSpeed; // The current speed of the car
+    Color color; // Color of the car
+    String modelName; // The car model name
     // Skulle kunna göra dessa paket-private, alltså varken public/private
 
     public void move(){

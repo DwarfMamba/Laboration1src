@@ -9,7 +9,7 @@ public class CarGame extends JFrame{
     ImageIcon carIcon;
 
     public static void main(String[] args){
-        Car car = new Saab95(); //skapa ny bil
+        Car car = new Volvo240(); //skapa ny bil
         car.startEngine(); //starta bilen
         CarGame map = new CarGame(car); //skapa ny karta
 
