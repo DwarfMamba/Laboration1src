@@ -15,7 +15,7 @@ public class CarGame extends JFrame{
 
         for (int i = 0; i <= 300; i++){
 
-            car.gas(1); //GAS
+            car.gas(0.01); //GAS
 
             if(i%20 == 1){
                 car.turnLeft();
