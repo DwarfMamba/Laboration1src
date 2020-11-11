@@ -17,11 +17,11 @@ public class CarGame extends JFrame{
 
             car.gas(0.01); //GAS
 
-            if(i%20 == 1){
+            if(i%40 == 1){
                 car.turnLeft();
             }//sväng vänster var tjugonde frame
 
-            if(i%50 == 1){
+            if(i%65 == 1){
                 car.turnRight();
             }//sväng höger var trettionde frame
 
