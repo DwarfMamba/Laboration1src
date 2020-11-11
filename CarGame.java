@@ -56,13 +56,13 @@ public class CarGame extends JFrame{
         int xcoord = (int) Math.round(inputCar.position.getX());
         int ycoord = (int) Math.round(inputCar.position.getY());
 
-        if(inputCar.dir == 0){
+        if(inputCar.dir == Car.NORTH){
             carIcon = new ImageIcon("carIconNORTH.png");
-        } else if(inputCar.dir == 1){
+        } else if(inputCar.dir == Car.EAST){
             carIcon = new ImageIcon("carIconEAST.png");
-        } else if(inputCar.dir == 2){
+        } else if(inputCar.dir == Car.SOUTH){
             carIcon = new ImageIcon("carIconSOUTH.png");
-        } else {
+        } else if(inputCar.dir == Car.WEST){
             carIcon = new ImageIcon("carIconWEST.png");
         }
 
